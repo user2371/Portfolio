@@ -73,6 +73,11 @@ html, body {
 }
 .nav-list__link {
     color: var(--header-text);
+    transition: opacity 0.2s ease-in;
+}
+
+.nav-list__link:hover {
+    opacity: 0.8;   
 }
 .nav-list__link--active {
     position: relative;
@@ -97,12 +102,17 @@ html, body {
     text-align: center;
     min-height: 695px;
     padding: 40px 0px;
+
     background-color: var(--dark-bg);
+    background-image: url("../img/headerBg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
     color: var(--header-text);
 }
 
 .header__wrapper {
-    max-width: 660px;
+    max-width: 670px;
     padding: 0 15px;
 }
 
@@ -143,4 +153,14 @@ html, body {
     font-weight: 500;
     background-color: var(--accent);
     border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn:active {        
+    position: relative;
+    top: 2px;
 }
