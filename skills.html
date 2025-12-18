@@ -15,10 +15,10 @@
         <a class="logo" href="./index.html"><strong>Freelancer</strong> portfolio</a>
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--active" href="index.html#projects">Projects</a>
+            <a class="nav-list__link " href="index.html#projects">Projects</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="skills.html">Skills</a>
+            <a class="nav-list__link nav-list__link--active" href="#">Skills</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="contacts.html">Contacts</a>
@@ -29,12 +29,27 @@
   </nav>
 
   <main class="mainSection">
-    <div class="project__details">
-      <h1 class="title-2">Project Name</h1>
-      <img class="project__details_img" src="./img/projects/fullsizeProjectsPhoto/01-big.jpg" alt="project image">
-      <p class="project__details_text">Skills: React, Node.js, MongoDB</p>
-      <button class="btn__outline"><img src="./img/icons/githubBlack.svg" alt="gitHub icon image">GitHub
-        repo</button>
+    <div class="container">
+      <div class="skills">
+        <h1 class="title-2">Skills</h1>
+        <ul class="skills__list">
+          <li class="skills__list_item">
+            <div class="frontend-skills">
+              <h3 class="title-3">Frontend</h3>
+              <p>JavaScript, TypeScript, ReactJS, Angular, Redux,
+                HTML, CSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents</p>
+                
+            </div>
+          </li>
+          <li class="skills__list_item">
+            <div class="backend-skills">
+              <h3 class="title-3">Backend</h3>
+              <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </div>
 
   </main>
