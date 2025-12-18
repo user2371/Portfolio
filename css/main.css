@@ -15,7 +15,7 @@ font-family: "Poppins", sans-serif;
     --black-border: #26292D;
     --purple: #5C62EC;
     --white: #fff;
-    
+
     --text-color: var(--black);
     --dark-bg: var(--black);
     --dark-border: var(--black-border);
@@ -23,7 +23,8 @@ font-family: "Poppins", sans-serif;
     --accent: var(--purple);
 }
 
-html, body {
+html,
+body {
     font-family: "DM Sans", sans-serif;
     letter-spacing: -0.5px;
     color: var(--text-color);
@@ -34,6 +35,7 @@ html, body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
 /* nav section */
 
 .nav {
@@ -56,7 +58,7 @@ html, body {
 .logo {
     color: var(--header-text);
     font-family: "Poppins", sans-serif;
-    font-size: 24px;    
+    font-size: 24px;
 }
 
 .logo strong {
@@ -71,22 +73,24 @@ html, body {
     font-weight: 500;
     font-family: "Poppins", sans-serif;
 }
+
 .nav-list__link {
     color: var(--header-text);
     transition: opacity 0.2s ease-in;
 }
 
 .nav-list__link:hover {
-    opacity: 0.8;   
+    opacity: 0.8;
     border-bottom: 2px solid var(--accent);
 }
+
 .nav-list__link--active {
     position: relative;
 }
 
 
 .nav-list__link--active::before {
-    content:  "";
+    content: "";
     display: block;
     position: absolute;
     left: 0;
@@ -141,7 +145,7 @@ html, body {
     margin-bottom: 40px;
 }
 
-.header__text p + p {
+.header__text p+p {
     margin-top: 0.5em;
 }
 
@@ -162,7 +166,7 @@ html, body {
     cursor: pointer;
 }
 
-.btn:active {        
+.btn:active {
     position: relative;
     top: 2px;
 }
@@ -182,6 +186,7 @@ html, body {
     color: var(--accent);
     margin-bottom: 60px;
 }
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -189,14 +194,18 @@ html, body {
     justify-content: center;
 
 }
+
 .project {
     max-width: 370px;
     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
+
 .project img {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
 .project__title {
     font-size: 24px;
     font-weight: 700;
@@ -206,3 +215,33 @@ html, body {
 }
 
 /* end of main section Projects */
+
+/*footer section*/
+.footer {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;    
+    column-gap: 30px;
+    margin-bottom: 27px;
+}
+.social__item {
+}
+
+.footer__copyright {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
