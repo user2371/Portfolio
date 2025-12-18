@@ -36,6 +36,45 @@ body {
     padding: 0 15px;
 }
 
+.btn {
+    display: inline-block;
+    height: 48px;
+    padding: 12px 28px;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: var(--accent);
+    border-radius: 5px;
+}
+
+.btn__outline {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: 1px solid var(--dark-border);
+    border-radius: 5px;
+    padding: 12px 20px;
+
+}
+
+.btn__outline:hover {
+    box-shadow: 0 0 10px 7px rgba(92, 98, 236, 1);
+}
+
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn:active,
+.btn__outline:active {
+    position: relative;
+    top: 2px;
+}
+
 /* nav section */
 
 .nav {
@@ -149,27 +188,7 @@ body {
     margin-top: 0.5em;
 }
 
-.btn {
-    display: inline-block;
-    height: 48px;
-    padding: 12px 28px;
-    font-size: 16px;
-    letter-spacing: 0.15px;
-    line-height: 1.5;
-    font-weight: 500;
-    background-color: var(--accent);
-    border-radius: 5px;
-}
 
-.btn:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.btn:active {
-    position: relative;
-    top: 2px;
-}
 
 /* main section Projects */
 
@@ -216,7 +235,42 @@ body {
 
 /* end of main section Projects */
 
-/*footer section*/
+/* project-page.html start*/
+.project__details {
+    max-width: 865px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.project__details_title {
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.project__details img {
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project__details_text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+
+
+/* project-page.html end*/
+
+
+/*footer section start*/
 .footer {
     background-color: var(--dark-bg);
     color: var(--white);
@@ -232,12 +286,12 @@ body {
 
 .social {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     column-gap: 30px;
     margin-bottom: 27px;
 }
-.social__item {
-}
+
+.social__item {}
 
 .footer__copyright {
     font-size: 16px;
@@ -245,3 +299,5 @@ body {
     line-height: 1.5;
     letter-spacing: -0.5px;
 }
+
+/*footer section end*/
