@@ -80,7 +80,7 @@ body {
     border-radius: 5px;
 }
 
-.btn__outline {
+a.btn__outline {
     height: 48px;
     display: flex;
     align-items: center;
@@ -88,6 +88,7 @@ body {
     border: 1px solid var(--dark-border);
     border-radius: 5px;
     padding: 12px 20px;
+    color: var(--black)
 
 }
 
