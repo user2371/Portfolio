@@ -362,3 +362,58 @@ a.btn__outline {
 }
 
 /*footer section end*/
+
+/* mobile */
+
+@media (max-width: 620px) {
+    .title-2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .title-3  {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .mainSection p {
+        font-size: 16px;
+    }
+    .header {
+        min-height: unset;
+    }
+    .header__title {
+        font-size: 30px;
+    }
+    .header__title strong {
+        font-size: 40px;
+    }
+    .mainSection {
+        padding-top: 35px;
+    }
+    .mainSection__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .social {
+        column-gap: 20px;
+    }
+    .social__item {
+        width: 28px
+    }
+
+    .contacts__list {
+        row-gap: 20px;
+    }
+
+    .project__details {
+        gap: 15px;
+    }
+}
+
+
+
