@@ -329,6 +329,7 @@ a.btn__outline {
     align-items: center;
     gap: 30px;
     padding: 10px;
+    letter-spacing: 1px;
 }
 
 .project__details_img {
